@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-image: url("https://static.vecteezy.com/system/resources/previews/037/236/785/non_2x/ai-generated-beautuful-sporting-background-with-copy-space-free-photo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+padding: 10px;
+backdrop-filter: blur(4px);
+    }
+    .container{
+        display: flex;
+    border: 3px  ridge;
+        width:50%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        position: relative;
+    box-shadow: 0 0px 10px beige;
+    backdrop-filter: blur(4px);
+        transition: all 0.3s ease-in;
+    }
+    .container:hover{
+border-color: transparent;
+    }             
+
+    img{
+        width: 35%;
+mix-blend-mode:normal ;
+        background-color: none;
+
+        
+        
+    }
+    
+    #for{
+    position: absolute;
+display: flex;
+padding-top: 8px;
+align-items: center;
+justify-content: center;
+font-size: 25px;
+    }
+h1{
+    margin-left: 22px;
+    text-transform: uppercase;
+padding: 5px;
+transition: 0.3s ease;
+
+}
+h1:hover{
+    color: white;
+    background-color: transparent;
+}
+h2{
+    text-transform: uppercase;
+}
+input{
+
+padding: 5px;
+border-radius: 12px;
+margin: 3px;
+transition: 0.3s ease-in;
+box-shadow: 0 0 5px lavender;
+}
+input:hover{
+   background-color: transparent;
+
+
+}
+#main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+padding-top: 8px;
+}
+#main1{
+    align-items: center;
+    justify-content: center;
+padding-top: 8px;
+position: absolute;
+display: flex;
+    padding-left: 20%;
+}
+a{
+    color:bisque;
+    text-decoration: none;
+    font-size: 22px;
+} p{
+    font-size: 18px;
+
+}
+#hello{
+    font-size: 20px;
+
+    color: palevioletred;
+    margin: 5px;
+    transition: var(--transition);
+}
+#hello:hover{
+    transform: scale(2.05);
+}
+#hello {
+    animation: bounce 3s infinite ;
+}
+@keyframes bounce {
+    0%,
+    100%{
+transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+}
+#hello1:hover{
+    transform: scale(2.05);
+}
+#hello1{
+    animation: bounce 3s infinite ;
+}
+@keyframes bounce {
+    0%,
+    100%{
+transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+}
+#hello2:hover{
+    transform: scale(2.05);
+}
+#hello2{
+    animation: bounce 3s infinite ;
+}
+@keyframes bounce {
+    0%,
+    100%{
+transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+}
+#hello3:hover{
+    transform: scale(2.05);
+}
+#hello3{
+    animation: bounce 3s infinite ;
+}
+@keyframes bounce {
+    0%,
+    100%{
+transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+}
+#hello4:hover{
+    transform: scale(2.05);
+}
+#hello4{
+    animation: bounce 3s infinite ;
+}
+@keyframes bounce {
+    0%,
+    100%{
+transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-15px);
+    }
+}
+
+
+
+
+
+
+
+#hello1{
+    color: black, white;
+    font-size: 20px;
+    margin: 5px;
+}
+#hello2{
+    color: orangered;
+    font-size: 20px;
+    margin: 5px;
+}
+#hello3{
+    color:#274046 ;
+    font-size: 20px;
+
+    margin: 5px;
+}
+#hello4{
+    font-size: 20px;
+    
+    color: #FFE47A;
+    margin: 5px;
+}
+
+#test{
+    text-align: center;
+color: black;
+background-color: transparent;
+transition: 0.4s ease-in;
+}
+#test:hover{
+    background-color: white;
+    transform:scale(-12px);
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <form>
+<div class="hero">
+    <i id="for" class="fa-solid fa-medal"></i>
+    <h1>Good sports</h1>
+    <h2>login page</h2>
+    <i  id="main"class="fa-solid fa-user"></i>
+    <input type="text" placeholder="email" id="email"> <br>
+    <i id="main1" class="fa-solid fa-eye" onclick="eye()"></i>
+    <input type="password" placeholder="password" id="password"> <br>
+    <a href=""> forgot password?</a> <br>
+    <input type="login" value="login" onclick="myfile()" id="test">
+    <p>play and exciting prize and its absolutely free!</p>
+    <p>Register here</p>
+    <i id="hello" class="fa-solid fa-baseball-bat-ball"></i>
+    <i id="hello1" class="fa-solid fa-baseball"></i>
+    <i id="hello2" class="fa-solid fa-football"></i>
+    <i id="hello3" class="fa-solid fa-hockey-puck"></i>
+    <i id="hello4" class="fa-solid fa-table-tennis-paddle-ball"></i>
+</form>
+</div>
+<img src="https://thumbs.dreamstime.com/b/female-soccer-player-football-full-length-portrait-isolated-white-background-112480604.jpg
+" alt="">
+    </div>
+    <script>
+        function myfile(){
+            let email = document.getElementById('email').value;
+            let password= document.getElementById('password').value;
+            event.preventDefault();
+            let emailpattern =/^[a-zA-Z0-9_+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+            let passwordpattern  =/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&])[a-zA-Z0-9@#$%^&]{8}$/;
+
+            if (!emailpattern.test(email)){
+            alert('enter your email');
+        return false;
+        }
+        if(!passwordpattern.test(password)){
+            alert('enter your password');
+            return false;
+        }
+            alert('login your successfully');
+            return true;
+        
+        };
+    
+            $(document).ready(function(){
+$("#main1").click(function(){
+let password = $("#password");
+let icon = $("#main1");
+
+            
+            if(password.attr("type")=== "password"){
+                password.attr("type","text");
+                main1.removeClass("fa-eye");
+                main1.addClass("fa-eye-slash")
+
+            }
+            else{
+                password.attr("type","password");
+                main1.removeClass("fa-eye-slash");
+                main1.addClass("fa-eye")
+        
+        }
+})
+    })
+        
+    </script>
+</body>
+</html>
